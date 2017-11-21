@@ -1,5 +1,6 @@
 using Lista2DevOps;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Lista2DevOpsTest
 {
@@ -27,6 +28,13 @@ namespace Lista2DevOpsTest
             Assert.AreEqual(_RomanConverter.Convert(08), "VIII");
             Assert.AreEqual(_RomanConverter.Convert(09), "IX");
             Assert.AreEqual(_RomanConverter.Convert(10), "X");
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof( InvalidCastException))]
+        public void TryConvert0()
+        {
+            Assert.AreEqual(_RomanConverter.Convert(0), "");
         }
     }
 }
