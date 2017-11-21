@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lista2DevOps
 {
     public class RomanConverter
     {
-        public string Convert(int v)
+        public string Convert(int decimalNumber)
         {
-            throw new NotImplementedException();
+            if (decimalNumber == 1)
+                return "I";
+
+            throw new InvalidCastException();
         }
     }
 }
