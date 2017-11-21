@@ -36,5 +36,12 @@ namespace Lista2DevOpsTest
         {
             Assert.AreEqual(_RomanConverter.Convert(0), "");
         }
+
+        [TestMethod]
+        public void Convert998()
+        {
+            // C-100 M900 X910 V915 III918
+            Assert.AreEqual(_RomanConverter.Convert(998), "CMXCVIII");
+        }
     }
 }
