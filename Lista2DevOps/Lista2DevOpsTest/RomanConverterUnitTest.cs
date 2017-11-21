@@ -26,7 +26,7 @@ namespace Lista2DevOpsTest
             Assert.AreEqual(_RomanConverter.Convert(07), "VII");
             Assert.AreEqual(_RomanConverter.Convert(08), "VIII");
             Assert.AreEqual(_RomanConverter.Convert(09), "IX");
-            Assert.AreEqual(_RomanConverter.Convert(10), "V");
+            Assert.AreEqual(_RomanConverter.Convert(10), "X");
         }
     }
 }
