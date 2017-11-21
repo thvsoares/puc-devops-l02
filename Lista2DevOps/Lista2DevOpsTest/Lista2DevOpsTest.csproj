@@ -12,4 +12,8 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lista2DevOps\Lista2DevOps.csproj" />
+  </ItemGroup>
+
 </Project>

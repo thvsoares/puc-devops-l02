@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Lista2DevOps
 {
-    class RomanConverter
+    public class RomanConverter
     {
+        public string Convert(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
