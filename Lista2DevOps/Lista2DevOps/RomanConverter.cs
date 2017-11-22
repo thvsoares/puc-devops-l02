@@ -7,6 +7,9 @@ namespace Lista2DevOps
     {
         public string Convert(int decimalNumber)
         {
+            if (decimalNumber < 1)
+                throw new InvalidCastException();
+
             var numero = decimalNumber.ToString();
             int tamanho = numero.Length;
             int quadroValor = 0;
